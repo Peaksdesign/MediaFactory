@@ -20,7 +20,7 @@ class App extends React.Component {
       .then( response => response.json() )
       .then( data => this.setState({ fetchData: data, loading: false }))
       .catch( error => {
-        console.log( error )  // Write given error into console (just to let advanced user know, what happend)
+        console.log( error )  // Write catched error into console
         this.setState({ fetchData: FileData, loading: false })
       })
   }
